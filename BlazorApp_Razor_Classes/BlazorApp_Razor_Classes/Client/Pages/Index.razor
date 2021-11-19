@@ -1,0 +1,63 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+<div>
+    <h2>Pizza</h2>
+    <h2>Pizza: @Pizza.Nome</h2>
+    <h2>Nome: @Pizza.Cadastro.ToString("dd MM yy")</h2>
+</div>
+<hr />
+<h1>Pizza(Foreach)</h1>
+@foreach (var produto in GetProdutos())
+{
+    <div>
+        <h2>Pizza : @produto.Nome</h2>
+        <h2>Pizza : @produto.Cadastro.ToString("dd MM yy")</h2>
+    </div>
+}
+<h1>Pizza(For)</h1>
+@for (int i = 0; i < GetProdutos().Count; i++)
+{
+    <div>
+        <h2>Pizza : @GetProdutos()[i].Nome</h2>
+        <h2>Pizza : @GetProdutos()[i].Cadastro.ToString("dd MM yy")</h2>
+    </div>
+}
+
+@code {
+    public List<Produto> Produtos { get { return GetProdutos(); } }
+    public Produto Pizza { get { return GetProduto(); } }
+
+    private List<Produto> GetProdutos()
+    {
+        return new List<Produto>
+{
+            new Produto()
+            {
+                Nome = "Pizza Mussarela",
+                Cadastro = new DateTime(2021, 11, 19)
+            },
+            new Produto()
+            {
+                Nome = "Pizza Calabreza",
+                Cadastro = new DateTime(2021, 11, 20)
+            },
+            new Produto()
+            {
+                Nome = "Pizza Portuguesa",
+                Cadastro = new DateTime(2021, 11, 21)
+            },
+
+        };
+
+    }
+    private Produto GetProduto()
+    {
+        return new Produto
+        {
+            Nome = "Pizza Mussarela",
+            Cadastro = new DateTime(2021, 11, 19)
+        };
+
+    }
+}

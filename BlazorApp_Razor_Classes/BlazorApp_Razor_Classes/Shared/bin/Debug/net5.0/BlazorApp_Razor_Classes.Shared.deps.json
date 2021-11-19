@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "BlazorApp_Razor_Classes.Shared/1.0.0": {
+        "runtime": {
+          "BlazorApp_Razor_Classes.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlazorApp_Razor_Classes.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

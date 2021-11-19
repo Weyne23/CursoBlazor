@@ -1,0 +1,12 @@
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\bin\Debug\net5.0\BlazorApp_Razor_Classes.Shared.deps.json
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\bin\Debug\net5.0\BlazorApp_Razor_Classes.Shared.dll
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\bin\Debug\net5.0\ref\BlazorApp_Razor_Classes.Shared.dll
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\bin\Debug\net5.0\BlazorApp_Razor_Classes.Shared.pdb
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\obj\Debug\net5.0\BlazorApp_Razor_Classes.Shared.csproj.AssemblyReference.cache
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\obj\Debug\net5.0\BlazorApp_Razor_Classes.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\obj\Debug\net5.0\BlazorApp_Razor_Classes.Shared.AssemblyInfoInputs.cache
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\obj\Debug\net5.0\BlazorApp_Razor_Classes.Shared.AssemblyInfo.cs
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\obj\Debug\net5.0\BlazorApp_Razor_Classes.Shared.csproj.CoreCompileInputs.cache
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\obj\Debug\net5.0\BlazorApp_Razor_Classes.Shared.dll
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\obj\Debug\net5.0\ref\BlazorApp_Razor_Classes.Shared.dll
+C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Shared\obj\Debug\net5.0\BlazorApp_Razor_Classes.Shared.pdb
