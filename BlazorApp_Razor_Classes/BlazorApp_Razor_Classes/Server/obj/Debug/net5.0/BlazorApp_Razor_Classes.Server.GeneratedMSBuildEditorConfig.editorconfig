@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = BlazorApp_Razor_Classes.Server
-build_property.ProjectDir = C:\Users\GSD_TI_009\Documents\Estudo\Blazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Server\
+build_property.ProjectDir = C:\Users\GSD_TI_009\Documents\Estudo\CursoBlazor\BlazorApp_Razor_Classes\BlazorApp_Razor_Classes\Server\

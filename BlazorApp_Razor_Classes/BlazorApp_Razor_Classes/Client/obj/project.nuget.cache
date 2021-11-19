@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GML9kBylbMxxfz9K0TDcLCv7uNq7IhvnIbjNhtULKn/+CD8/WtchEwJvl6vJb5xfPSfnw1mIGMMlUoBUgejviA==",
+  "dgSpecHash": "iIYnQLIY4NfrWxNwKCJaj45JBkGlwcHhRgLzwI6iGMza8OnkD7Q3pxRUNWavrQuLdw4MNLTFwuYolreN15kXPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GSD_TI_009\\Documents\\Estudo\\Blazor\\BlazorApp_Razor_Classes\\BlazorApp_Razor_Classes\\Client\\BlazorApp_Razor_Classes.Client.csproj",
+  "projectFilePath": "C:\\Users\\GSD_TI_009\\Documents\\Estudo\\CursoBlazor\\BlazorApp_Razor_Classes\\BlazorApp_Razor_Classes\\Client\\BlazorApp_Razor_Classes.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GSD_TI_009\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.12\\microsoft.aspnetcore.authorization.5.0.12.nupkg.sha512",
     "C:\\Users\\GSD_TI_009\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.12\\microsoft.aspnetcore.components.5.0.12.nupkg.sha512",

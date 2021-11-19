@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GSD_TI_009\\Documents\\Estudo\\Blazor\\BlazorApp_Razor_Classes\\BlazorApp_Razor_Classes\\Shared\\BlazorApp_Razor_Classes.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\GSD_TI_009\\Documents\\Estudo\\CursoBlazor\\BlazorApp_Razor_Classes\\BlazorApp_Razor_Classes\\Shared\\BlazorApp_Razor_Classes.Shared.csproj",
       "projectName": "BlazorApp_Razor_Classes.Shared",
-      "projectPath": "C:\\Users\\GSD_TI_009\\Documents\\Estudo\\Blazor\\BlazorApp_Razor_Classes\\BlazorApp_Razor_Classes\\Shared\\BlazorApp_Razor_Classes.Shared.csproj",
+      "projectPath": "C:\\Users\\GSD_TI_009\\Documents\\Estudo\\CursoBlazor\\BlazorApp_Razor_Classes\\BlazorApp_Razor_Classes\\Shared\\BlazorApp_Razor_Classes.Shared.csproj",
       "packagesPath": "C:\\Users\\GSD_TI_009\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GSD_TI_009\\Documents\\Estudo\\Blazor\\BlazorApp_Razor_Classes\\BlazorApp_Razor_Classes\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\GSD_TI_009\\Documents\\Estudo\\CursoBlazor\\BlazorApp_Razor_Classes\\BlazorApp_Razor_Classes\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
