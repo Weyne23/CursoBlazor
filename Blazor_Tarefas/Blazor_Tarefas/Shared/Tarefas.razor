@@ -1,0 +1,72 @@
+﻿@inject HttpClient http
+
+@if (tarefas == null)
+{
+    <Alerta Mensagem="Carregando..." />
+    @*<p>Carregando...</p>*@
+}
+else if (!tarefas.Any())
+{
+    <Alerta Mensagem="Ainda não possui tarefas..." />
+    @*<p>Ainda não possui tarefas...</p>*@
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Ação</th>
+                <th>Data</th>
+                <th>Descição</th>
+                <th>Concluida</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in tarefas)
+            {
+                <tr>
+                    <td><button @onclick="@(() => removeTarefa(item.ID))"><i class="oi oi-trash"></i></button></td>
+                    <TarefaIndividual item="item"/>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}
+
+@if (tarefas != null)
+{
+    <div class="form-group">
+        <label>Tarefa</label>
+        <input type="text" placeholder="Informe a tarefa" @bind="novaTarefa" />
+        <button class="btn btn-primary" @onclick="AdicionarNovaTarefa">Nova Tarefa</button>
+    </div>
+}
+
+@code {
+
+    [Parameter] public List<Tarefa> tarefas { get; set; }
+    [Parameter] public string titulo { get; set; }
+
+    private void AdicionarNovaTarefa()
+    {
+        if (!string.IsNullOrWhiteSpace(novaTarefa))
+        {
+            tarefas.Add(new Tarefa()
+            {
+                DataCriacao = DateTime.Now,
+                Descricao = novaTarefa,
+                ID = Guid.NewGuid()
+            });
+
+            novaTarefa = "";
+        }
+    }
+
+    private void removeTarefa(Guid id)
+    {
+        tarefas.Remove(tarefas.First(x => x.ID == id));
+    }
+
+    private string novaTarefa = "";
+}

@@ -1,0 +1,21 @@
+﻿@page "/"
+
+<h1>@Mensagem</h1>
+@*<h2>@Saudacao()</h2>
+
+<button @onclick="SaudacaoDataBinding">Botão</button>*@
+<input @bind="@Mensagem"/>
+
+@code{
+    private string Mensagem { get; set; } = "Eai meu chapa!";
+
+    private string Saudacao()
+    {
+        return "Retornando blazor";
+    }
+    
+    private void SaudacaoDataBinding()
+    {
+        Mensagem = "Retornando blazor data binding";
+    }
+}

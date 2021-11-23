@@ -10,6 +10,10 @@
 <h1>Pizza(Foreach)</h1>
 @foreach (var produto in GetProdutos())
 {
+    @if (produto.Nome.Contains("Calabreza"))
+    {
+        <h3> <b>Pizza Calabreza com 20% de desconto</b></h3>
+    }
     <div>
         <h2>Pizza : @produto.Nome</h2>
         <h2>Pizza : @produto.Cadastro.ToString("dd MM yy")</h2>
@@ -18,13 +22,29 @@
 <h1>Pizza(For)</h1>
 @for (int i = 0; i < GetProdutos().Count; i++)
 {
+    @if (i == GetProdutos().Count - 1)
+    {
+        <h3> Essa é o ultimo produto!</h3>
+    }
     <div>
         <h2>Pizza : @GetProdutos()[i].Nome</h2>
         <h2>Pizza : @GetProdutos()[i].Cadastro.ToString("dd MM yy")</h2>
     </div>
 }
 
+@switch (dia)
+{
+    case "Monday":
+        mensagem = "Este é o dia da semana.";
+        break;
+    default:
+        mensagem = "Hoje é " + dia;
+        break;
+}
+
 @code {
+    string dia = DateTime.Now.DayOfWeek.ToString();
+    string mensagem = "";
     public List<Produto> Produtos { get { return GetProdutos(); } }
     public Produto Pizza { get { return GetProduto(); } }
 
