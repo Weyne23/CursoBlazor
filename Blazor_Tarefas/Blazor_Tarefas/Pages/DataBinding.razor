@@ -1,0 +1,13 @@
+﻿@page "/databinding"
+
+<h1>@Nome</h1>
+
+<hr />
+@* Evento para atualizacao do elemento é o onchange *@
+<input @bind="Nome" />
+
+<input @bind-value="Nome" @bind-value:event="oninput"/>
+
+@code {
+    public string Nome { get; set; } = "Blazor";
+}
