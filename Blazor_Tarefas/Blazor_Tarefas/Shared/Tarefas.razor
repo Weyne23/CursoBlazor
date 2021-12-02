@@ -2,12 +2,21 @@
 
 @if (tarefas == null)
 {
-    <Alerta Mensagem="Carregando..." />
+    <Alerta>
+        <span style="color: blue">Tarefa Carregando...</span>
+    </Alerta>
     @*<p>Carregando...</p>*@
 }
 else if (!tarefas.Any())
 {
-    <Alerta Mensagem="Ainda não possui tarefas..." />
+    <Alerta>
+        <div class="card">
+            <div class="card-body">
+                Sem Tarefas...
+                <span style="color: lightpink"> Sem Tarefas...</span>
+            </div>
+        </div>
+    </Alerta>
     @*<p>Ainda não possui tarefas...</p>*@
 }
 else
@@ -25,8 +34,7 @@ else
             @foreach (var item in tarefas)
             {
                 <tr>
-                    <td><button @onclick="@(() => removeTarefa(item.ID))"><i class="oi oi-trash"></i></button></td>
-                    <TarefaIndividual item="item"/>
+                    <TarefaIndividual item="item" removerTarefa="removeTarefa"/>
                 </tr>
 
             }
@@ -63,9 +71,9 @@ else
         }
     }
 
-    private void removeTarefa(Guid id)
+    private void removeTarefa(Tarefa terefa)
     {
-        tarefas.Remove(tarefas.First(x => x.ID == id));
+        tarefas.Remove(tarefas.First(x => x.ID == terefa.ID));
     }
 
     private string novaTarefa = "";

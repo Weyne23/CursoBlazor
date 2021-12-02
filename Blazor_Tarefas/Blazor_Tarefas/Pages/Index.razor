@@ -8,7 +8,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        tarefas = await http.GetFromJsonAsync<List<Tarefa>>("dados/json.json");
+        tarefas = await http.GetFromJsonAsync<List<Tarefa>>("dados/json1.json");
     }
 
     private List<Tarefa> GetTarefas()
