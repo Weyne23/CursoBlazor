@@ -1,0 +1,42 @@
+﻿@* Usada pra especificar um tipo generico para um parametro (Como se fosse o tipo <T>)*@
+@typeparam Titem
+
+@if (ListaItem == null)
+{
+    if (Carregando == null)
+    {
+        <iframe src="https://giphy.com/embed/YR33rgTx9yhvUfHcjJ" width="480" height="239" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <text> Carregando </text>
+    }
+    else
+    {
+        @Carregando
+    }
+    @*<p>Carregando...</p>*@
+}
+else if (!ListaItem.Any())
+{
+    if (SemRegistro == null)
+    {
+        <iframe src="https://giphy.com/embed/KFi6ZTn95SSGbVUZqi" width="344" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <text> Não existem tarefas </text>
+    }
+    else
+    {
+        @SemRegistro
+    }
+}
+else
+{
+    foreach (var elemento in ListaItem)
+    {
+        @Lista(elemento)
+    }
+}
+
+@code {
+    [Parameter] public RenderFragment Carregando { get; set; }
+    [Parameter] public RenderFragment SemRegistro { get; set; }
+    [Parameter] public List<Titem> ListaItem { get; set; }
+    [Parameter] public RenderFragment<Titem> Lista { get; set; }
+}

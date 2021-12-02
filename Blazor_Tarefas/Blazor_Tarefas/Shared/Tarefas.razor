@@ -1,26 +1,4 @@
 ﻿@inject HttpClient http
-
-@if (tarefas == null)
-{
-    <Alerta>
-        <span style="color: blue">Tarefa Carregando...</span>
-    </Alerta>
-    @*<p>Carregando...</p>*@
-}
-else if (!tarefas.Any())
-{
-    <Alerta>
-        <div class="card">
-            <div class="card-body">
-                Sem Tarefas...
-                <span style="color: lightpink"> Sem Tarefas...</span>
-            </div>
-        </div>
-    </Alerta>
-    @*<p>Ainda não possui tarefas...</p>*@
-}
-else
-{
     <table class="table">
         <thead>
             <tr>
@@ -31,16 +9,13 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in tarefas)
-            {
-                <tr>
-                    <TarefaIndividual item="item" removerTarefa="removeTarefa"/>
-                </tr>
-
-            }
+            <ListaGenerica ListaItem="tarefas">
+                <Lista Context="tarefa">
+                    <TarefaIndividual item="tarefa" removerTarefa="removeTarefa"/>
+                </Lista>
+            </ListaGenerica>
         </tbody>
     </table>
-}
 
 @if (tarefas != null)
 {
