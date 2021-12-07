@@ -1,0 +1,28 @@
+﻿@page "/counter"
+@inject ServicoSingleton singleton
+@inject ServicoScoped scoped
+@*transient cria uma nova instancia ao sair do scopo, (Se for para Home e voltar para cont os valores de singleton e scoped não resetam, 
+somente o so tansient, pois singleton e scoped usam a mesma instancia criada no começo ao iniciar a pagina) singleton e scoped mantem o mesmo valor em todo o projeto(escopo)*@
+@inject ServicoTransient transient
+
+<h1>Counter</h1>
+<p>Current count: @currentCount</p>
+<hr />
+
+<p>Singleton Count : @singleton.Valor</p>
+<p>Scoped Count : @scoped.Valor</p>
+<p>Transient Count : @transient.Valor</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+        singleton.Valor = currentCount;
+        scoped.Valor = currentCount;
+        transient.Valor = currentCount;
+    }
+}
